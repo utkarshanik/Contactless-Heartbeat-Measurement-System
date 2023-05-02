@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+<div class="w2-sidebar w2-light-grey w3-bar-block" style="width:15%">
+  <a href="input" class="w3-bar-item w3-button">START</a>
+  <a href="video" class="w3-bar-item w3-button">STOP</a>
+ 
+</div>
+
+
+<div class="w3-card-4 w3-margin">
+    <img src="{{ url_for('video_stream') }}" alt="Alps" style="width:90%">
+    <div class="w3-container w3-center">
+      <p>Real Time Video Streaming</p>
+    </div>
+  </div>
+
+  {% endblock %}

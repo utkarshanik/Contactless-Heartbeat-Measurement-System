@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+<div class="w2-sidebar w2-light-grey w3-bar-block" style="width:25%">
+  <a href="video" class="w3-bar-item w3-button">STOP</a>
+
+  </div>
+
+  <p style="color:rgba(0,255,0)">Average BPM:- 60-100 </p>
+   <p style="color:firebrick;">Low BPM:- Below 60</p> 
+   <p style="color:red;">High BPM:- Above 100</p> 
+
+<div class="w3-card-4 w3-margin">
+    <img src="{{ url_for('videoo') }}" alt="Alps" style="width:100%">
+     <div class="w3-container w3-center">
+      <p>Real Time Video Streaming</p>
+    </div>
+  </div>
+
+  {% endblock %}
